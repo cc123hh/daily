@@ -143,13 +143,17 @@ def func_3() -> None:
     decodeDaily(daily_dic[dailyIndex]['filePath'])
 
 while True:
+    
+    print("""
+          [1]
+          """)
+    
     code: int = int(input("Code:"))
 
     func_dict = {
-        1: readBook,
+        1: False,
         2: func_2,
         3: func_3,
-        4:exit()
     }
 
     func_dict[code]()
